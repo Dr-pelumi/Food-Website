@@ -547,3 +547,103 @@ section .main-btn i:hover {
 	text-decoration: none;
 }
 
+/* Team */
+.team{
+	width: 100%;
+	height: 90vh;
+	background-image: url(./Image/bg1.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.team h1{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 55px;
+	margin-bottom: 30px;
+	/* margin-top: 70px; */
+}
+.team h1 span{
+	color: #fac031;
+	margin-left: 10px;
+	font-family: mv boli;
+}
+.team h1 span::after{
+	content: '';
+	width: 100%;
+	height: 2px;
+	color: #fac031;
+	position: relative;
+	display: block;
+	bottom: 15px;
+}
+.team .team-box{
+	width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	top: 13%;
+}
+.team .team-box .profile{
+	width: 320px;
+	height: 320px;
+	margin: 0 15px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+	transition: .4s;
+}
+.team .team-box .profile:hover{
+	border-radius: 20px;
+	height: 320px;
+}
+
+.team .team-box .profile img{
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: center;
+	cursor: pointer;
+	z-index: 2;
+	transition: .4s;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+	transition: .4s;
+}
+.team .team-box .profile:hover img{
+	border-radius: 20px;
+	margin-top: -230px;
+}
+.team .team-box .profile .info{
+	position: absolute;
+	text-align: center;
+	top: 20%;
+	transition: .4s;
+}
+.team .team-box .profile:hover .info{
+	top: 60%;
+}
+.team .team-box .profile:hover .info .name{
+	color: #fac031;
+	margin-bottom: 15px;
+}
+.team .team-box .profile:hover .bio{
+	width: 70%;
+	text-align: center;
+	margin: 0 auto 5px auto;
+}
+.team .team-box .profile:hover .info .team-icon i{
+	margin-bottom: 20px;
+	transition: .4s;
+	cursor: pointer;
+}
+.team .team-box .profile:hover .info .team-icon i:hover{
+	color: #fac031;
+}
+
+
