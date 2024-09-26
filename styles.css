@@ -177,7 +177,7 @@ section .main-btn i:hover{
    display: flex;
    align-items: center;
    justify-content: center;
-   margin-bottom: 30px;
+   margin-top: 80px;
 }
 .menu h1 span{
    color: #fac031;
@@ -332,9 +332,10 @@ section .main-btn i:hover{
 .gallery .gallery-image-box .gallery-img img{
    width: 100%;
    transition: .4s;
+   
 }
-.gallery .gallery-image-box .gallery-img img:hover{
-   opacity: .4s;
+.gallery .gallery-image-box .gallery-img:hover img{
+   opacity: .2;
 }
 .gallery .gallery-image-box .gallery-img h3{
    position: absolute;
@@ -348,4 +349,34 @@ section .main-btn i:hover{
 }
 .gallery .gallery-image-box .gallery-img:hover h3{
    opacity: 1;
+}
+.gallery .gallery-image-box .gallery-img p{
+   position: absolute;
+   width: 400px;
+   margin-top: 30px;
+   text-align: center;
+   color: white;
+   line-height: 22px;
+   opacity: 0;
+   z-index: 5;
+   transition: 0.3s;
+}
+.gallery .gallery-image-box .gallery-img:hover p{
+   opacity: 1;
+}
+.gallery .gallery-image-box .gallery-img .gallery-btn{
+   position: absolute;
+   margin-top: 180px;
+   color: #000;
+   background-color: #fac031;
+   padding: 7px 25px;
+   text-decoration: none;
+   z-index: 5;
+   opacity: 0;
+   transform: translateY(27px);
+   transition: .3s;
+}
+.gallery .gallery-image-box .gallery-img:hover .gallery-btn{
+   opacity: 1;
+   transform: translateY(0);
 }
