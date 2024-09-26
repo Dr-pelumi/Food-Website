@@ -380,3 +380,106 @@ section .main-btn i:hover{
    opacity: 1;
    transform: translateY(0);
 }
+
+/* Review */
+
+.review{
+   width: 100%;
+   height: 100vh;
+   margin: 70px 0;
+}
+.review h1{
+   font-size: 55px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.review h1 span{
+   margin-left: 10px;
+   color: #fac031;
+   font-family: mv boli;
+}
+.review h1 span::after{
+   content: "";
+   width: 100%;
+   height: 2px;
+   color: #fac031;
+   position: relative;
+   bottom: 15px;
+   display: block;
+}
+.review .review-box{
+   width: 95%;
+   margin: 70px 0;
+   display: flex;
+
+}
+.review .review-box .review-card{
+   /* background-color: pink; */
+   width: 350px;
+   height: 485px;
+   box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+   border-radius: 8px;
+   padding: 8px 20px;
+   margin: 0 8px;
+   cursor: pointer;
+}
+.review .review-box .review-card .review-profile{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   transition: .3s;
+}
+.review .review-box .review-card:hover .review-profile{
+   transform: translateY(-60px);
+}
+.review .review-box .review-card .review-profile img{
+   width: 180px;
+   height: 180px;
+   object-fit: cover;
+   object-position: center;
+   border-radius: 50%;
+   border: 2px solid #cccccc;
+}
+.review .review-box .review-card .review-text{
+   text-align: center;
+}
+.review .review-box .review-card .review-text .name{
+color: #000;
+transition: .3s;
+}
+.review .review-box .review-card:hover .review-text .name{
+   transform: translateY(-60px);
+}
+.review .review-box .review-card .review-text .review-icon{
+   color: #fac031;
+   transition: .3s;
+}
+.review .review-box .review-card:hover .review-text .review-icon{
+   transform: translateY(-60px);
+}
+.review .review-box .review-card .review-text .review-social a{
+margin: 5px 1px;
+cursor: pointer;
+
+}
+.review-card .review-text .review-social a i{
+   font-size: 15px;
+   color: #000;
+   opacity: .5;
+   transition: .3s;
+}
+.review .review-box .review-card:hover .review-text .review-social a i{
+opacity: 1;
+}
+.review .review-box .review-card .review-text p{
+   text-align: center;
+   line-height: 22px;
+   transition: .3s;
+}
+.review .review-box .review-card:hover .review-text p{
+   margin-top: 5px;
+}
+
+
